@@ -1,0 +1,213 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #551A8B;
+    margin-bottom: 4%;
+}
+
+#img_logo {
+    width: 150px;
+    margin-left: 46%;
+    margin-bottom: -26px;
+}
+
+.cabecalho1 {
+    width: 100%;
+    background-color: #b5bef7;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    padding-bottom: 2%;
+}
+
+.logado_ou_nao img {
+    width: 8%;
+}
+
+.logado_ou_nao {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    right: -10%;
+    top: 5px;
+    gap: 10px;
+    color: #551A8B;
+}
+
+.sem_agendamento {
+    text-align: center;
+    color: #551A8B;
+}
+
+
+
+/* Estilo para o dropdown */
+.dropdown {
+    display: none;
+    /* Oculto por padrão */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    right: 60%;
+    bottom: -60%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.logado_ou_nao:hover .dropdown {
+    display: block;
+}
+
+#img_sem_agendamento {
+    width: 10%;
+    margin-bottom: 20px;
+}
+
+
+.modal_cancelar {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #f8f9fa;
+}
+
+.modal_cancelar h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#btn_sim {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(1, 161, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+#btn_sim:hover {
+    background-color: rgb(15, 184, 15);
+    cursor: pointer;
+
+}
+
+
+#btn_nao {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(255, 38, 38);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn_nao:hover {
+    background-color: rgb(253, 60, 60);
+    cursor: pointer;
+}
+
+
+.btn_cancelar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 38, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_cancelar:hover {
+    background-color: rgb(253, 60, 60);
+}
+
+
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Modal de confirmação */
+
+
+.sem_agendamento {
+    text-align: center;
+}
+
+.sem_agendamento h2 {
+    text-align: center;
+    color: #551A8B;
+}
+
+.sem_agendamento img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Adicionando responsividade */
+@media screen and (max-width: 768px) {
+    .cabecalho1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logado_ou_nao {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
